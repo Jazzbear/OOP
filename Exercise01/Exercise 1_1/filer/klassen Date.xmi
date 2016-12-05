@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <!DOCTYPE XMI SYSTEM "UMLX13.DTD" [
+<!ELEMENT DiagramExtensions (RealDiagramType|ActivationView|ZoomAndPan|FreehandDrawing|NameFigurePosition)*>
+<!ATTLIST DiagramExtensions xmi.idref IDREF #REQUIRED>
+<!ELEMENT RealDiagramType EMPTY>
+<!ATTLIST RealDiagramType xmi.value CDATA #REQUIRED>
+<!ELEMENT NameFigurePosition EMPTY>
+<!ATTLIST NameFigurePosition xmi.idref IDREF #REQUIRED xmi.value CDATA #REQUIRED>
+<!ELEMENT ZoomAndPan EMPTY>
+<!ATTLIST ZoomAndPan xmi.value CDATA #REQUIRED>
+<!ELEMENT FreehandDrawing EMPTY>
+<!ATTLIST FreehandDrawing  id CDATA #REQUIRED  style CDATA #REQUIRED  geometry CDATA #REQUIRED >
+<!ELEMENT ActivationView EMPTY>
+<!ATTLIST ActivationView  xmi.id ID #REQUIRED  ClassifierRole IDREF  #REQUIRED  Geometry CDATA  #REQUIRED  SenderViews CDATA  #REQUIRED  ReceiverViews CDATA  #REQUIRED  SubActivationViews CDATA  #REQUIRED  SuperActivationView CDATA  #REQUIRED  >
+<!ELEMENT Workspace EMPTY>
+<!ATTLIST Workspace xmi.idref IDREF #REQUIRED geometry CDATA #REQUIRED>
+<!ELEMENT ActiveWorkspace EMPTY>
+<!ATTLIST ActiveWorkspace xmi.idref IDREF #REQUIRED>
+<!ELEMENT CommonAttributes EMPTY>
+<!ATTLIST CommonAttributes version CDATA #REQUIRED>
+<!ELEMENT UNSET EMPTY>
+<!ATTLIST UNSET xmi.idref IDREF #REQUIRED attribute CDATA #REQUIRED>
+<!ELEMENT IncompleteRelationship (Foundation.Core.Association|Foundation.Core.Generalization|Foundation.Core.Dependency)>
+<!ATTLIST IncompleteRelationship namespace IDREF #REQUIRED>
+<!ELEMENT ToggleAssociationEnd EMPTY>
+<!ATTLIST ToggleAssociationEnd xmi.idref IDREF #REQUIRED attribute CDATA #REQUIRED>
+]>
+<XMI xmi.version="1.0">
+    <XMI.header>
+        <XMI.documentation>
+            <XMI.exporter>Ideogramic UML</XMI.exporter>
+            <XMI.exporterVersion>2.3.3</XMI.exporterVersion>
+        </XMI.documentation>
+        <XMI.metamodel xmi.name="UML" xmi.version="1.3"/>
+    </XMI.header>
+    <XMI.content>
+        <Model_Management.Model xmi.id="idmodel0-406D25CE">
+            <Foundation.Core.ModelElement.name>Untitled</Foundation.Core.ModelElement.name>
+            <Foundation.Core.ModelElement.visibility xmi.value="public"/>
+            <Foundation.Core.ModelElement.isSpecification xmi.value="false"/>
+            <Foundation.Core.GeneralizableElement.isRoot xmi.value="true"/>
+            <Foundation.Core.GeneralizableElement.isLeaf xmi.value="true"/>
+            <Foundation.Core.GeneralizableElement.isAbstract xmi.value="false"/>
+            <Foundation.Core.Namespace.ownedElement>
+                <Foundation.Core.Class xmi.id="idclass3-406D25CE">
+                    <Foundation.Core.ModelElement.name>Date</Foundation.Core.ModelElement.name>
+                    <Foundation.Core.ModelElement.visibility xmi.value="private"/>
+                    <Foundation.Core.ModelElement.isSpecification xmi.value="false"/>
+                    <Foundation.Core.GeneralizableElement.isRoot xmi.value="true"/>
+                    <Foundation.Core.GeneralizableElement.isLeaf xmi.value="true"/>
+                    <Foundation.Core.GeneralizableElement.isAbstract xmi.value="false"/>
+                    <Foundation.Core.Class.isActive xmi.value="false"/>
+                    <Foundation.Core.ModelElement.namespace>
+                        <Model_Management.Model xmi.idref="idmodel0-406D25CE"/>
+                    </Foundation.Core.ModelElement.namespace>
+                    <Foundation.Core.Classifier.feature>
+                        <Foundation.Core.Attribute xmi.id="idattribute0-4E524B21">
+                            <Foundation.Core.ModelElement.name> day: int</Foundation.Core.ModelElement.name>
+                            <Foundation.Core.ModelElement.visibility xmi.value="private"/>
+                            <Foundation.Core.ModelElement.isSpecification xmi.value="false"/>
+                            <Foundation.Core.Feature.ownerScope xmi.value="instance"/>
+                            <Foundation.Core.StructuralFeature.multiplicity>
+                                <Foundation.Data_Types.Multiplicity>
+                                    <Foundation.Data_Types.Multiplicity.range>
+                                        <Foundation.Data_Types.MultiplicityRange>
+                                            <Foundation.Data_Types.MultiplicityRange.lower>1</Foundation.Data_Types.MultiplicityRange.lower>
+                                            <Foundation.Data_Types.MultiplicityRange.upper>1</Foundation.Data_Types.MultiplicityRange.upper>
+                                        </Foundation.Data_Types.MultiplicityRange>
+                                    </Foundation.Data_Types.Multiplicity.range>
+                                </Foundation.Data_Types.Multiplicity>
+                            </Foundation.Core.StructuralFeature.multiplicity>
+                            <Foundation.Core.StructuralFeature.changeability xmi.value="changeable"/>
+                            <Foundation.Core.StructuralFeature.targetScope xmi.value="instance"/>
+                            <Foundation.Core.Attribute.initialValue>
+                                <Foundation.Data_Types.Expression>
+                                    <Foundation.Data_Types.Expression.language></Foundation.Data_Types.Expression.language>
+                                    <Foundation.Data_Types.Expression.body></Foundation.Data_Types.Expression.body>
+                                </Foundation.Data_Types.Expression>
+                            </Foundation.Core.Attribute.initialValue>
+                            <Foundation.Core.Feature.owner>
+                                <Foundation.Core.Class xmi.idref="idclass3-406D25CE"/>
+                            </Foundation.Core.Feature.owner>
+                            <Foundation.Core.StructuralFeature.type>
+                                <Foundation.Core.DataType xmi.idref="iddataType0-406D25CE"/>
+                            </Foundation.Core.StructuralFeature.type>
+                        </Foundation.Core.Attribute>
+                        <Foundation.Core.Attribute xmi.id="idattribute1-4E524B21">
+                            <Foundation.Core.ModelElement.name> month: int</Foundation.Core.ModelElement.name>
+                            <Foundation.Core.ModelElement.visibility xmi.value="private"/>
+                            <Foundation.Core.ModelElement.isSpecification xmi.value="false"/>
+                            <Foundation.Core.Feature.ownerScope xmi.value="instance"/>
+                            <Foundation.Core.StructuralFeature.multiplicity>
+                                <Foundation.Data_Types.Multiplicity>
+                                    <Foundation.Data_Types.Multiplicity.range>
+                                        <Foundation.Data_Types.MultiplicityRange>
+                                            <Foundation.Data_Types.MultiplicityRange.lower>1</Foundation.Data_Types.MultiplicityRange.lower>
+                                            <Foundation.Data_Types.MultiplicityRange.upper>1</Foundation.Data_Types.MultiplicityRange.upper>
+                                        </Foundation.Data_Types.MultiplicityRange>
+                                    </Foundation.Data_Types.Multiplicity.range>
+                                </Foundation.Data_Types.Multiplicity>
+                            </Foundation.Core.StructuralFeature.multiplicity>
+                            <Foundation.Core.StructuralFeature.changeability xmi.value="changeable"/>
+                            <Foundation.Core.StructuralFeature.targetScope xmi.value="instance"/>
+                            <Foundation.Core.Attribute.initialValue>
+                                <Foundation.Data_Types.Expression>
+                                    <Foundation.Data_Types.Expression.language></Foundation.Data_Types.Expression.language>
+                                    <Foundation.Data_Types.Expression.body></Foundation.Data_Types.Expression.body>
+                                </Foundation.Data_Types.Expression>
+                            </Foundation.Core.Attribute.initialValue>
+                            <Foundation.Core.Feature.owner>
+                                <Foundation.Core.Class xmi.idref="idclass3-406D25CE"/>
+                            </Foundation.Core.Feature.owner>
+                            <Foundation.Core.StructuralFeature.type>
+                                <Foundation.Core.DataType xmi.idref="iddataType0-406D25CE"/>
+                            </Foundation.Core.StructuralFeature.type>
+                        </Foundation.Core.Attribute>
+                        <Foundation.Core.Attribute xmi.id="idattribute2-4E524B21">
+                            <Foundation.Core.ModelElement.name> year: int</Foundation.Core.ModelElement.name>
+                            <Foundation.Core.ModelElement.visibility xmi.value="private"/>
+                            <Foundation.Core.ModelElement.isSpecification xmi.value="false"/>
+                            <Foundation.Core.Feature.ownerScope xmi.value="instance"/>
+                            <Foundation.Core.StructuralFeature.multiplicity>
+                                <Foundation.Data_Types.Multiplicity>
+                                    <Foundation.Data_Types.Multiplicity.range>
+                                        <Foundation.Data_Types.MultiplicityRange>
+                                            <Foundation.Data_Types.MultiplicityRange.lower>1</Foundation.Data_Types.MultiplicityRange.lower>
+                                            <Foundation.Data_Types.MultiplicityRange.upper>1</Foundation.Data_Types.MultiplicityRange.upper>
+                                        </Foundation.Data_Types.MultiplicityRange>
+                                    </Foundation.Data_Types.Multiplicity.range>
+                                </Foundation.Data_Types.Multiplicity>
+                            </Foundation.Core.StructuralFeature.multiplicity>
+                            <Foundation.Core.StructuralFeature.changeability xmi.value="changeable"/>
+                            <Foundation.Core.StructuralFeature.targetScope xmi.value="instance"/>
+                            <Foundation.Core.Attribute.initialValue>
+                                <Foundation.Data_Types.Expression>
+                                    <Foundation.Data_Types.Expression.language></Foundation.Data_Types.Expression.language>
+                                    <Foundation.Data_Types.Expression.body></Foundation.Data_Types.Expression.body>
+                                </Foundation.Data_Types.Expression>
+                            </Foundation.Core.Attribute.initialValue>
+                            <Foundation.Core.Feature.owner>
+                                <Foundation.Core.Class xmi.idref="idclass3-406D25CE"/>
+                            </Foundation.Core.Feature.owner>
+                            <Foundation.Core.StructuralFeature.type>
+                                <Foundation.Core.DataType xmi.idref="iddataType0-406D25CE"/>
+                            </Foundation.Core.StructuralFeature.type>
+                        </Foundation.Core.Attribute>
+                        <Foundation.Core.Operation xmi.id="idoperation0-4E524B21">
+                            <Foundation.Core.ModelElement.name> setDate(int, int, int): bool</Foundation.Core.ModelElement.name>
+                            <Foundation.Core.ModelElement.visibility xmi.value="public"/>
+                            <Foundation.Core.ModelElement.isSpecification xmi.value="false"/>
+                            <Foundation.Core.Feature.ownerScope xmi.value="instance"/>
+                            <Foundation.Core.BehavioralFeature.isQuery xmi.value="false"/>
+                            <Foundation.Core.Operation.concurrency xmi.value="sequential"/>
+                            <Foundation.Core.Operation.isRoot xmi.value="false"/>
+                            <Foundation.Core.Operation.isLeaf xmi.value="false"/>
+                            <Foundation.Core.Operation.isAbstract xmi.value="false"/>
+                            <Foundation.Core.Operation.specification></Foundation.Core.Operation.specification>
+                            <Foundation.Core.Feature.owner>
+                                <Foundation.Core.Class xmi.idref="idclass3-406D25CE"/>
+                            </Foundation.Core.Feature.owner>
+                        </Foundation.Core.Operation>
+                        <Foundation.Core.Operation xmi.id="idoperation1-4E524B21">
+                            <Foundation.Core.ModelElement.name> printDate( void ): void</Foundation.Core.ModelElement.name>
+                            <Foundation.Core.ModelElement.visibility xmi.value="public"/>
+                            <Foundation.Core.ModelElement.isSpecification xmi.value="false"/>
+                            <Foundation.Core.Feature.ownerScope xmi.value="instance"/>
+                            <Foundation.Core.BehavioralFeature.isQuery xmi.value="false"/>
+                            <Foundation.Core.Operation.concurrency xmi.value="sequential"/>
+                            <Foundation.Core.Operation.isRoot xmi.value="false"/>
+                            <Foundation.Core.Operation.isLeaf xmi.value="false"/>
+                            <Foundation.Core.Operation.isAbstract xmi.value="false"/>
+                            <Foundation.Core.Operation.specification></Foundation.Core.Operation.specification>
+                            <Foundation.Core.Feature.owner>
+                                <Foundation.Core.Class xmi.idref="idclass3-406D25CE"/>
+                            </Foundation.Core.Feature.owner>
+                        </Foundation.Core.Operation>
+                        <Foundation.Core.Operation xmi.id="idoperation2-4E524B21">
+                            <Foundation.Core.ModelElement.name> checkDate( void ): bool</Foundation.Core.ModelElement.name>
+                            <Foundation.Core.ModelElement.visibility xmi.value="private"/>
+                            <Foundation.Core.ModelElement.isSpecification xmi.value="false"/>
+                            <Foundation.Core.Feature.ownerScope xmi.value="instance"/>
+                            <Foundation.Core.BehavioralFeature.isQuery xmi.value="false"/>
+                            <Foundation.Core.Operation.concurrency xmi.value="sequential"/>
+                            <Foundation.Core.Operation.isRoot xmi.value="false"/>
+                            <Foundation.Core.Operation.isLeaf xmi.value="false"/>
+                            <Foundation.Core.Operation.isAbstract xmi.value="false"/>
+                            <Foundation.Core.Operation.specification></Foundation.Core.Operation.specification>
+                            <Foundation.Core.Feature.owner>
+                                <Foundation.Core.Class xmi.idref="idclass3-406D25CE"/>
+                            </Foundation.Core.Feature.owner>
+                        </Foundation.Core.Operation>
+                    </Foundation.Core.Classifier.feature>
+                </Foundation.Core.Class>
+                <Foundation.Core.Class xmi.id="idclass1-4086326B">
+                    <Foundation.Core.ModelElement.name>Dummy class</Foundation.Core.ModelElement.name>
+                    <Foundation.Core.ModelElement.visibility xmi.value="public"/>
+                    <Foundation.Core.ModelElement.isSpecification xmi.value="false"/>
+                    <Foundation.Core.GeneralizableElement.isRoot xmi.value="true"/>
+                    <Foundation.Core.GeneralizableElement.isLeaf xmi.value="true"/>
+                    <Foundation.Core.GeneralizableElement.isAbstract xmi.value="false"/>
+                    <Foundation.Core.Class.isActive xmi.value="false"/>
+                    <Foundation.Core.ModelElement.namespace>
+                        <Model_Management.Model xmi.idref="idmodel0-406D25CE"/>
+                    </Foundation.Core.ModelElement.namespace>
+                </Foundation.Core.Class>
+                <Foundation.Core.DataType xmi.id="iddataType0-406D25CE">
+                    <Foundation.Core.ModelElement.name>Undefined</Foundation.Core.ModelElement.name>
+                    <Foundation.Core.ModelElement.visibility xmi.value="public"/>
+                    <Foundation.Core.ModelElement.isSpecification xmi.value="false"/>
+                    <Foundation.Core.GeneralizableElement.isRoot xmi.value="true"/>
+                    <Foundation.Core.GeneralizableElement.isLeaf xmi.value="true"/>
+                    <Foundation.Core.GeneralizableElement.isAbstract xmi.value="false"/>
+                    <Foundation.Core.ModelElement.namespace>
+                        <Model_Management.Model xmi.idref="idmodel0-406D25CE"/>
+                    </Foundation.Core.ModelElement.namespace>
+                </Foundation.Core.DataType>
+                <Foundation.Extension_Mechanisms.Stereotype xmi.id="idstereotype0-406D25CE">
+                    <Foundation.Core.ModelElement.name>utility</Foundation.Core.ModelElement.name>
+                    <Foundation.Core.ModelElement.visibility xmi.value="public"/>
+                    <Foundation.Core.ModelElement.isSpecification xmi.value="false"/>
+                    <Foundation.Core.GeneralizableElement.isRoot xmi.value="true"/>
+                    <Foundation.Core.GeneralizableElement.isLeaf xmi.value="true"/>
+                    <Foundation.Core.GeneralizableElement.isAbstract xmi.value="false"/>
+                    <Foundation.Extension_Mechanisms.Stereotype.icon></Foundation.Extension_Mechanisms.Stereotype.icon>
+                    <Foundation.Extension_Mechanisms.Stereotype.baseClass>class</Foundation.Extension_Mechanisms.Stereotype.baseClass>
+                    <Foundation.Core.ModelElement.namespace>
+                        <Model_Management.Model xmi.idref="idmodel0-406D25CE"/>
+                    </Foundation.Core.ModelElement.namespace>
+                </Foundation.Extension_Mechanisms.Stereotype>
+            </Foundation.Core.Namespace.ownedElement>
+        </Model_Management.Model>
+        <Diagramming.Diagram xmi.id="idclassDiagram0-406D25CE">
+            <Diagramming.Diagram.name>Main</Diagramming.Diagram.name>
+            <Diagramming.Diagram.toolName>Rational Rose 98</Diagramming.Diagram.toolName>
+            <Diagramming.Diagram.diagramType>ClassDiagram</Diagramming.Diagram.diagramType>
+            <Diagramming.Diagram.style>0.153806451613,0.0,0.0,20000 20000,</Diagramming.Diagram.style>
+            <Diagramming.Diagram.owner>
+                <Foundation.Core.ModelElement xmi.idref="idmodel0-406D25CE"/>
+            </Diagramming.Diagram.owner>
+            <Diagramming.Diagram.element>
+                <Diagramming.DiagramElement xmi.id="idclassView3-406D25CE">
+                    <Diagramming.DiagramElement.geometry>351.0,396.0,631.8,514.8,</Diagramming.DiagramElement.geometry>
+                    <Diagramming.DiagramElement.style>Font.Blue=0,Font.Green=0,Font.Red=0,Font.FaceName=Arial,Font.Size=10,Font.Bold=0,Font.Italic=0,Font.Strikethrough=0,Font.Underline=0,LineColor.Blue=0,LineColor.Green=0,LineColor.Red=0,FillColor.Blue=174,FillColor.Green=245,FillColor.Red=251,FillColor.Transparent=1,AutomaticResize=1,ShowAllAttributes=1,ShowAllOperations=1,ShowOperationSignature=0,SuppressAttributes=0,SuppressOperations=0,</Diagramming.DiagramElement.style>
+                    <Foundation.Core.PresentationElement.subject>
+                        <Foundation.Core.ModelElement xmi.idref="idclass3-406D25CE"/>
+                    </Foundation.Core.PresentationElement.subject>
+                </Diagramming.DiagramElement>
+            </Diagramming.Diagram.element>
+        </Diagramming.Diagram>
+    </XMI.content>
+    <XMI.extensions xmi.extender="Ideogramic UML">
+        <DiagramExtensions xmi.idref="idclassDiagram0-406D25CE">
+            <ZoomAndPan xmi.value="0.153806451613 0.0 0.0"/>
+        </DiagramExtensions>
+        <Workspace xmi.idref="idclassDiagram0-406D25CE" geometry="800x600+440+225"/>
+        <ActiveWorkspace xmi.idref="idclassDiagram0-406D25CE"/>
+        <CommonAttributes version="2.3.3"/>
+    </XMI.extensions>
+</XMI>
+
